@@ -1,4 +1,3 @@
-Hello you
 Hello kyryl, In this script you can recognize version , network interface , firewall, configuration
 Please enter your password to continue....
 Linux
