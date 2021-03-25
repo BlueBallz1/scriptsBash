@@ -1,0 +1,75 @@
+Hello you
+Hello kyryl, In this script you can recognize version , network interface , firewall, configuration
+Please enter your password to continue....
+Linux
+_____________________________________________________________________________________________________
+
+[;32m1.Version[1;0m
+5.8.0-48-generic
+_____________________________________________________________________________________________________
+
+[;32m2.Network Interface[1;0m
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: enp0s3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 08:00:27:e0:c0:2e brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 brd 10.0.2.255 scope global dynamic noprefixroute enp0s3
+       valid_lft 78356sec preferred_lft 78356sec
+    inet6 fe80::fb00:9730:2ede:5c41/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever
+_____________________________________________________________________________________________________
+
+[;32m3.Firewall Configuration[1;0m
+Состояние: активен
+Журналирование: on (low)
+По умолчанию: deny (входящие), allow (исходящие), disabled (маршрутизированные)
+Новые профили: skip
+
+В                          Действие    Из
+-                          --------    --
+22                         ALLOW IN    Anywhere                  
+22/tcp                     LIMIT IN    Anywhere                  
+80/tcp                     DENY IN     Anywhere                  
+192.168.1.5 3318/tcp       ALLOW IN    0.0.0.0/24                
+22 (v6)                    ALLOW IN    Anywhere (v6)             
+22/tcp (v6)                LIMIT IN    Anywhere (v6)             
+80/tcp (v6)                DENY IN     Anywhere (v6)             
+
+80/tcp                     ALLOW OUT   Anywhere                  
+80/tcp (v6)                ALLOW OUT   Anywhere (v6)             
+
+_____________________________________________________________________________________________________
+
+[;32m4.PC Configuration[1;0m
+H/W path        Устройство  Класс  Описание
+==================================================================
+                                      system      VirtualBox
+/0                                    bus         VirtualBox
+/0/0                                  memory      128KiB BIOS
+/0/1                                  memory      2GiB Системная память
+/0/2                                  processor   Intel(R) Core(TM) i5-9300H CPU @ 2.40GHz
+/0/100                                bridge      440FX - 82441FX PMC [Natoma]
+/0/100/1                              bridge      82371SB PIIX3 ISA [Natoma/Triton II]
+/0/100/1.1                            storage     82371AB/EB/MB PIIX4 IDE
+/0/100/2                              display     SVGA II Adapter
+/0/100/3        enp0s3                network     82540EM Gigabit Ethernet Controller
+/0/100/4                              generic     VirtualBox Guest Service
+/0/100/5                              multimedia  82801AA AC'97 Audio Controller
+/0/100/6                              bus         KeyLargo/Intrepid USB
+/0/100/6/1      usb1                  bus         OHCI PCI host controller
+/0/100/6/1/1                          input       USB Tablet
+/0/100/7                              bridge      82371AB/EB/MB PIIX4 ACPI
+/0/100/d                              storage     82801HM/HEM (ICH8M/ICH8M-E) SATA Controller [AHCI mode]
+/0/3                                  input       PnP device PNP0303
+/0/4                                  input       PnP device PNP0f03
+/0/5            scsi1                 storage     
+/0/5/0.0.0      /dev/cdrom            disk        CD-ROM
+/0/6            scsi2                 storage     
+/0/6/0.0.0      /dev/sda              disk        10GB VBOX HARDDISK
+/0/6/0.0.0/1    /dev/sda1             volume      512MiB Windows FAT volume
+/0/6/0.0.0/2    /dev/sda2             volume      9725MiB Extended partition
+/0/6/0.0.0/2/5  /dev/sda5             volume      9725MiB Том EXT4

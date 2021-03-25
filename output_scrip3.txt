@@ -1,0 +1,84 @@
+Hello, This script show information about your workstation 
+
+[32m1.Current Time[1;0m
+ 21:36:44 up 34 min,  1 user,  load average: 0,01, 0,11, 0,17
+
+[32m2.Information about Current User[1;0m
+kyryl    :0           2021-03-25 21:02 (:0)
+
+[32m3.Recent Logins[1;0m
+kyryl    :0           :0               Thu Mar 25 21:02   still logged in
+reboot   system boot  5.8.0-48-generic Thu Mar 25 21:01   still running
+nazik    :1           :1               Thu Mar 25 19:06 - crash  (01:55)
+
+[32m4.TOP-10 processec by RAM/CPU usage
+
+[33m4.1 TOP-10 processec by RAM usage[1;0m
+USER     COMMAND             PID %CPU %MEM     TIME
+kyryl    gnome-shell        1464  3.9 16.2 00:01:21
+kyryl    firefox            2291  2.5 15.3 00:00:50
+kyryl    Web Content        2498  2.1 13.9 00:00:42
+kyryl    Web Content        2795  0.8  7.9 00:00:09
+kyryl    snap-store         1719  0.2  7.9 00:00:04
+kyryl    Web Content        2646  0.4  7.4 00:00:07
+kyryl    Privileged Cont    2366  0.0  6.8 00:00:01
+kyryl    WebExtensions      2459  0.1  5.6 00:00:02
+kyryl    Web Content        3039  0.0  4.0 00:00:00
+
+[33m4.2 TOP-10 processec by CPU usage[1;0m
+USER     COMMAND             PID %CPU %MEM     TIME
+kyryl    gnome-shell        1464  3.9 16.2 00:01:21
+kyryl    firefox            2291  2.5 15.3 00:00:50
+kyryl    Web Content        2498  2.1 13.9 00:00:42
+kyryl    Xorg               1285  1.2  3.9 00:00:25
+kyryl    Web Content        2795  0.8  7.9 00:00:09
+kyryl    Web Content        2646  0.4  7.4 00:00:07
+kyryl    pulseaudio         1233  0.2  0.7 00:00:04
+kyryl    snap-store         1719  0.2  7.9 00:00:04
+kyryl    gnome-terminal-    2076  0.2  2.3 00:00:05
+
+[32m5.Open TCPP ports[1;0m
+Netid  State   Recv-Q  Send-Q   Local Address:Port    Peer Address:Port Process 
+udp    UNCONN  0       0              0.0.0.0:631          0.0.0.0:*            
+udp    UNCONN  0       0        127.0.0.53%lo:53           0.0.0.0:*            
+udp    UNCONN  0       0              0.0.0.0:49299        0.0.0.0:*            
+udp    UNCONN  0       0              0.0.0.0:5353         0.0.0.0:*            
+udp    UNCONN  0       0                 [::]:39896           [::]:*            
+udp    UNCONN  0       0                 [::]:5353            [::]:*            
+tcp    LISTEN  0       4096     127.0.0.53%lo:53           0.0.0.0:*            
+tcp    LISTEN  0       5            127.0.0.1:631          0.0.0.0:*            
+tcp    LISTEN  0       5                [::1]:631             [::]:*            
+
+[32m5.Virtual memory usage[1;0m
+procs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----
+ r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
+ 0  0  57596 133768  21164 657280    3   29   590   216  960 1869 10  1 89  0  0
+
+[32m6.Usage of space disk[1;0m
+12K	./scriptsBash/.git/objects/pack
+16K	./scriptsBash/.git/objects
+20K	./scriptsBash/.git
+24K	./scriptsBash
+8,0K	./.git/logs/refs/remotes/origin
+12K	./.git/logs/refs/remotes
+8,0K	./.git/logs/refs/heads
+24K	./.git/logs/refs
+32K	./.git/logs
+8,0K	./.git/info
+8,0K	./.git/refs/remotes/origin
+12K	./.git/refs/remotes
+8,0K	./.git/refs/heads
+4,0K	./.git/refs/tags
+28K	./.git/refs
+8,0K	./.git/objects/0d
+4,0K	./.git/objects/pack
+8,0K	./.git/objects/4b
+4,0K	./.git/objects/info
+8,0K	./.git/objects/90
+8,0K	./.git/objects/20
+44K	./.git/objects
+56K	./.git/hooks
+4,0K	./.git/branches
+196K	./.git
+256K	.
+
