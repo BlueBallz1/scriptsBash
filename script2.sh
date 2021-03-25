@@ -8,7 +8,6 @@ exec 1> output_script2.txt
 name=$(whoami)
 
 
-echo "Hello you"
 
 
 echo "Hello "$name", In this script you can recognize version , network interface , firewall, configuration"
